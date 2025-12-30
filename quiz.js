@@ -236,5 +236,3 @@ function startSongPlayback() {
 
   },150);
 }
-
-
