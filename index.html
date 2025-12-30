@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Who Said This? 💗</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- YouTube iframe API (loaded early so it's available when clicked) -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- INTRO -->
+  <div id="introScreen">
+    <h2 class="intro_title">must be used to my questions by now :3 guess kro kisne bola h oke? 💗</h2>
+    <img class="intro_gif"
+      src="https://i.pinimg.com/originals/ee/90/9e/ee909efdaaed966354375532bc2a3ab1.gif" alt="cute gif">
+    <p class="intro_text">
+      2023, 2024, 2025, (can't wait for 2026), lets see a few of my faves throughout the years 😼💕
+    </p>
+    <button class="heart_btn" onclick="startQuiz()">Start</button>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="quizScreen" style="display:none">
+    <h2 id="questionText" class="question_text"></h2>
+    <img id="questionGif" class="question_gif" alt="question gif">
+    <div class="buttons">
+      <button class="btn" onclick="handleAnswer('a')">atsuwu</button>
+      <button class="btn" onclick="handleAnswer('b')">chieffy bb</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- HIDDEN YT PLAYER CONTAINER -->
+<div id="ytPlayer" style="display:none;"></div>
+
+<!-- POPUPS -->
+<div id="correctAtsuwu" class="popup">
+  <div class="popup_box">
+    <img class="popup_gif"
+      src="https://media.giphy.com/media/901mxGLGQN2PyCQpoc/giphy.gif" alt="atsuwu correct">
+    <p class="popup_text">achudi yawssssss</p>
+    <button class="popup_btn" onclick="closePopup()">continue</button>
+  </div>
+</div>
+
+<div id="correctChieffy" class="popup">
+  <div class="popup_box">
+    <img class="popup_gif"
+      src="https://media.tenor.com/uIfdbOeDY1wAAAAM/scottish-fold-sad.gif" alt="chieffy correct">
+    <p class="popup_text">
+      YESSSSSSSSSSSSSSSS MY BABY SAID THAT AAAAAAA SO CUTE
+    </p>
+    <button class="popup_btn" onclick="closePopup()">continue</button>
+  </div>
+</div>
+
+<div id="wrongAtsuwu" class="popup">
+  <div class="popup_box">
+    <img class="popup_gif"
+      src="https://media.giphy.com/media/rQQ7EeK6Kwh3WFSvR2/giphy.gif" alt="wrong atsuwu">
+    <p class="popup_text">NOPE, smol bibi ne bola</p>
+    <button class="popup_btn" onclick="closePopup()">next</button>
+  </div>
+</div>
+
+<div id="wrongChieffy" class="popup">
+  <div class="popup_box">
+    <img class="popup_gif"
+      src="https://media.giphy.com/media/A3R78SOFdkfpoHCdb9/giphy.gif" alt="wrong chieffy">
+    <p class="popup_text">it was me.</p>
+    <button class="popup_btn" onclick="closePopup()">next</button>
+  </div>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>

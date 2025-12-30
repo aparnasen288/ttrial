@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+  font-family: "Comic Neue", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#ffe6ef,#ffd3e4,#ffc7de);
+  background-attachment: fixed;
+  transition: background 1.6s ease;
+  color: #4a2c2c;
+}
+
+.container {
+  width: 860px;
+  aspect-ratio: 16/9;
+  background: white;
+  border-radius: 20px;
+  border: 2px solid #ffd6eb;
+  box-shadow: 0 10px 34px rgba(255,140,180,.28);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+/* INTRO */
+
+.intro_title { font-size: 34px; font-weight: 700; }
+
+.intro_gif {
+  width: 265px;
+  border-radius: 16px;
+  margin: 8px 0;
+}
+
+.intro_text { font-size: 18px; }
+
+.heart_btn {
+  margin-top: 10px;
+  padding: 12px 28px;
+  font-size: 20px;
+  border-radius: 16px;
+  background:#ff8dbd;
+  color:white;
+  border:none;
+  font-weight:800;
+  cursor:pointer;
+}
+
+/* QUIZ */
+
+#quizScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question_text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.question_gif {
+  width: 355px;
+  border-radius: 16px;
+  margin: 10px 0 12px 0;
+}
+
+.buttons { margin-top: 6px; }
+
+.btn {
+  margin: 8px;
+  padding: 12px 26px;
+  border-radius: 16px;
+  border: none;
+  background: #ff8dbd;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.btn:hover,
+.heart_btn:hover {
+  background:#ff76af;
+  transform: scale(1.05);
+}
+
+/* POPUPS */
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_box {
+  background: #fff4fa;
+  border-radius: 20px;
+  border: 2px solid #ffd6eb;
+  padding: 24px 28px;
+  text-align: center;
+  box-shadow: 0 10px 34px rgba(255,140,180,.28);
+}
+
+.popup_gif {
+  width: 230px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.popup_text {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.popup_btn {
+  padding: 12px 40px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 16px;
+  border: none;
+  background:#ff8dbd;
+  color:white;
+  cursor:pointer;
+  transition: .2s;
+}
+
+.popup_btn:hover {
+  transform: scale(1.05);
+  background:#ff76af;
+}
+
+/* Moon gif */
+
+.moon_gif {
+  width: 460px;
+  border-radius: 18px;
+  margin-top: 10px;
+  box-shadow: 0 10px 34px rgba(140,170,255,.45);
+}
