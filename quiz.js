@@ -147,7 +147,7 @@ function mix(a,b,t){
 // ===== MUSIC TIMING =====
 const START_TIME = 50;
 const FADE_START = 75;
-const END_TIME   = 80;
+const END_TIME   = 85;
 
 
 // ===== MOON BUTTON (CREATE PLAYER ON CLICK) =====
@@ -165,7 +165,7 @@ function playSong() {
 
   // moon scene
   questionEl.innerHTML =
-    "(s)he looks just like a dream, the prettiest boy ive ever seen <3 ";
+    "he looks just like a dream, the prettiest boy ive ever seen <3 ";
 
   gifEl.src =
     "https://64.media.tumblr.com/90f6cdcbc51c53fa4ca7294da96fc3f8/tumblr_pios19KpQC1ufq8wko1_1280.gif";
