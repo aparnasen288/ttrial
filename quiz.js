@@ -147,7 +147,7 @@ function mix(a,b,t){
 // ===== MUSIC TIMING =====
 const START_TIME = 50;
 const FADE_START = 75;
-const END_TIME   = 80;
+const END_TIME   = 81;
 
 
 // ===== MOON BUTTON (CREATE PLAYER ON CLICK) =====
